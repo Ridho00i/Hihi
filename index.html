@@ -1,0 +1,123 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Sederhana</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2em;
+            margin: 1em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .project {
+            margin-bottom: 1em;
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nama Anda</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>
+            [Tulis deskripsi singkat tentang diri Anda, keahlian, dan minat Anda di sini.]
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyek</h2>
+
+        <div class="project">
+            <h3>Proyek 1</h3>
+            <p>Deskripsi singkat tentang proyek 1.</p>
+            <a href="#">Lihat Detail</a>
+        </div>
+
+        <div class="project">
+            <h3>Proyek 2</h3>
+            <p>Deskripsi singkat tentang proyek 2.</p>
+            <a href="#">Lihat Detail</a>
+        </div>
+
+        <!-- Tambahkan proyek lainnya di sini -->
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Anda dapat menghubungi saya melalui:</p>
+        <ul>
+            <li>Email: <a href="mailto:email@anda.com">email@anda.com</a></li>
+            <li>LinkedIn: <a href="#">Profil LinkedIn</a></li>
+            <li>GitHub: <a href="#">Profil GitHub</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Nama Anda</p>
+    </footer>
+
+</body>
+</html>
