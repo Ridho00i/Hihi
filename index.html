@@ -23,6 +23,18 @@
             width: 100%;
             z-index: 100;
         }
+        
+        .logo {
+            font-size: 3rem;
+            color: #b74b4b;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
 
         .navbar a {
             float: left;
@@ -133,12 +145,22 @@
 <body>
 
     <!-- Navbar -->
-    <div class="navbar">
-        <a href="#header">Beranda</a>
-        <a href="#projects">Proyek</a>
-        <a href="#about">Tentang Saya</a>
-        <a href="#contact">Kontak</a>
-    </div>
+    <a href="#" class="logo">Zaxin</a>
+
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Experience</a>
+            <a href="#">Contact</a>
+        </nav>
+        
+    </header>
 
     <div class="content">
         <!-- Header Section -->
@@ -169,18 +191,9 @@
             <p>Saya adalah seorang pengembang web yang bersemangat dengan pengalaman dalam membangun aplikasi web modern. Saya memiliki minat yang besar dalam desain dan pengalaman pengguna, dan selalu berusaha untuk memberikan solusi yang inovatif dan efektif.</p>
         </section>
         
-        <div class="project">
-            <h3>Proyek 2</h3>
-            <p>Deskripsi singkat tentang proyek 2.</p>
-            <a href="#">Lihat Detail</a>
-        </div>
-
-        <!-- Tambahkan proyek lainnya di sini -->
-    </section>
-
         <!-- Contact Section -->
         <section id="contact">
-        <h3>Kontak</h3>
+            <h2>Kontak</h2>
         <p>Anda dapat menghubungi saya melalui:</p>
         <ul>
             <li>Email: <a href="mailto:email@anda.com">email@anda.com</a></li>
