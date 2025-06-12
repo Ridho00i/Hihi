@@ -1,4 +1,4 @@
-html
+Teeest
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,117 +7,186 @@ html
     <title>Portofolio Sederhana</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
 
-        header {
+        /* Navbar Styles */
+        .navbar {
             background-color: #333;
-            color: #fff;
-            padding: 1em 0;
+            overflow: hidden;
+            position: fixed; /* Stay fixed */
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
             text-align: center;
-        }
-
-        nav ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 1em;
-        }
-
-        nav a {
-            color: #fff;
+            padding: 14px 16px;
             text-decoration: none;
         }
 
-        section {
-            padding: 2em;
-            margin: 1em;
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            padding-top: 60px; /* Add padding to the top of the content to avoid being hidden by the navbar */
+        }
+
+        /* Header Styles */
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        #header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        #header p {
+            font-size: 1.2em;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Projects Styles */
+        #projects {
             background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .project {
-            margin-bottom: 1em;
-            border: 1px solid #ddd;
-            padding: 1em;
-            border-radius: 4px;
+            margin-bottom: 30px;
         }
 
-        footer {
-            text-align: center;
-            padding: 1em 0;
+        .project img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        /* About Styles */
+        #about {
+            background-color: #f4f4f4;
+        }
+
+        /* Contact Styles */
+        #contact {
+            background-color: #fff;
+        }
+
+        #contact p {
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styles */
+        #footer {
             background-color: #333;
             color: #fff;
+            text-align: center;
+            padding: 20px;
         }
 
-        /* Responsif */
-        @media (max-width: 600px) {
-            nav ul li {
-                display: block;
-                margin: 0.5em 0;
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #header {
+                padding: 80px 20px;
+            }
+
+            #header h1 {
+                font-size: 2.5em;
+            }
+
+            .section {
+                padding: 40px 20px;
+            }
+
+            .section h2 {
+                font-size: 2em;
             }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Nama Anda</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Tentang Saya</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#header">Beranda</a>
+        <a href="#projects">Proyek</a>
+        <a href="#about">Tentang Saya</a>
+        <a href="#contact">Kontak</a>
+    </div>
 
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>
-            [Tulis deskripsi singkat tentang diri Anda, keahlian, dan minat Anda di sini.]
-        </p>
-    </section>
+    <div class="content">
+        <!-- Header Section -->
+        <section id="header">
+            <h1>Nama Anda</h1>
+            <p>Pengembang Web | Desainer | Kreator</p>
+        </section>
 
-    <section id="projects">
-        <h2>Proyek</h2>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Proyek Saya</h2>
+            <div class="project">
+                <img src="gambar1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Deskripsi singkat tentang proyek ini.</p>
+            </div>
+            <div class="project">
+                <img src="gambar2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Deskripsi singkat tentang proyek ini.</p>
+            </div>
+            <!-- Tambahkan proyek lain di sini -->
+        </section>
 
-        <div class="project">
-            <h3>Proyek 1</h3>
-            <p>Deskripsi singkat tentang proyek 1.</p>
-            <a href="#">Lihat Detail</a>
-        </div>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah seorang pengembang web yang bersemangat dengan pengalaman dalam membangun aplikasi web modern. Saya memiliki minat yang besar dalam desain dan pengalaman pengguna, dan selalu berusaha untuk memberikan solusi yang inovatif dan efektif.</p>
+        </section>
 
-        <div class="project">
-            <h3>Proyek 2</h3>
-            <p>Deskripsi singkat tentang proyek 2.</p>
-            <a href="#">Lihat Detail</a>
-        </div>
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Kontak Saya</h2>
+            <p>Anda dapat menghubungi saya melalui email di <a href="mailto:email@anda.com">email@anda.com</a> atau melalui formulir kontak di bawah ini:</p>
+            <form>
+                <input type="text" placeholder="Nama Anda">
+                <input type="email" placeholder="Email Anda">
+                <textarea placeholder="Pesan Anda"></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
 
-        <!-- Tambahkan proyek lainnya di sini -->
-    </section>
-
-    <section id="contact">
-        <h2>Kontak</h2>
-        <p>Anda dapat menghubungi saya melalui:</p>
-        <ul>
-            <li>Email: <a href="mailto:email@anda.com">email@anda.com</a></li>
-            <li>LinkedIn: <a href="#">Profil LinkedIn</a></li>
-            <li>GitHub: <a href="#">Profil GitHub</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Nama Anda</p>
-    </footer>
+        <!-- Footer -->
+        <footer id="footer">
+            <p>&copy; 2023 Portofolio Anda</p>
+        </footer>
+    </div>
 
 </body>
 </html>
