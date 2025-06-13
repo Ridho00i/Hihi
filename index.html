@@ -37,11 +37,26 @@
         }
         
         .hamburger {
-            display: none;
-            cursor: pointer;
-            font-size: 2.5rem;
-            color: white;
-        }
+    display: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: white;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
         
         @media(max-width:995px) {
     .hamburger {
